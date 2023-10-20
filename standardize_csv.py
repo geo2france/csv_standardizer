@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import io
 from sys import stdout, stdin, stderr
 
