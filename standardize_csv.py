@@ -28,7 +28,7 @@ TODO2 : Générer un csvt ?
 def standardize():
     def rename_duplicates(lst):
         """
-        Pour renommer les entêtes identiques (col, col_1, col_2, etc.)
+        Pour renommer les entêtes identiques (col, 1_col, 2_col, etc.)
         """
         seen = {}
         new_lst = []
@@ -38,7 +38,7 @@ def standardize():
                 new_lst.append(item)
             else:
                 seen[item] += 1
-                new_lst.append(f"{item}_{seen[item] - 1}")
+                new_lst.append(f"{seen[item] - 1}_{item}")
         return new_lst
 
 
@@ -62,6 +62,7 @@ def standardize():
     for row in rows :
         if header :
             row = rename_duplicates(row)
+            pass
         header = False
         writer.writerow(row)
 
