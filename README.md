@@ -2,7 +2,7 @@
 
 Un script utilisant [CleverCSV](https://github.com/alan-turing-institute/CleverCSV) permettant
 de normaliser un CSV en UTF-8 avec le dialecte [RFC-4180](https://datatracker.ietf.org/doc/html/rfc4180) (séparateur virgule, double quote, etc.).
-Les caractéristique du CSV en entrée sont détectés automatiquement.
+Les caractéristique du CSV en entré sont détectées automatiquement.
 
 ## Installation
 
